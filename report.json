@@ -1,0 +1,40 @@
+{
+  "inStockOver100": [],
+  "categoryCounts": {
+    "Electronics": 1,
+    "Home": 1,
+    "Furniture": 1
+  },
+  "topExpensive": [
+    {
+      "ProductName": "Laptop",
+      "Price": 1500,
+      "Category": "Electronics",
+      "InStock\r": "TRUE\r"
+    },
+    {
+      "ProductName": "Keyboard",
+      "Price": 500,
+      "Category": "Electronics",
+      "InStock\r": "TRUE\r"
+    },
+    {
+      "ProductName": "Monitor",
+      "Price": 220,
+      "Category": "Electronics",
+      "InStock\r": "TRUE"
+    },
+    {
+      "ProductName": "Chair",
+      "Price": 80,
+      "Category": "Furniture",
+      "InStock\r": "TRUE\r"
+    },
+    {
+      "ProductName": "Coffee Mug",
+      "Price": 12,
+      "Category": "Home",
+      "InStock\r": "FALSE\r"
+    }
+  ]
+}

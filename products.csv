@@ -1,0 +1,6 @@
+ProductName,Price,Category,InStock
+Laptop,1500,Electronics,TRUE
+Keyboard,500,Electronics,TRUE
+Coffee Mug,12,Home,FALSE
+Chair,80,Furniture,TRUE
+Monitor,220,Electronics,TRUE
