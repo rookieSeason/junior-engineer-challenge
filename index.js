@@ -11,12 +11,12 @@ function parseCSV(filePath) {
   try {
     const data = fs.readFileSync(filePath, "utf-8");
     const lines = data.trim().split("\n");
-    const headers = lines[0].split(",");
+    const headers = lines[0].split(",").map((h) => h.trim());
 
     return lines.slice(1).map((line) => {
-      const values = line.split(",");
+      const values = line.split(",").map((v) => v.trim());
       return headers.reduce((obj, header, index) => {
-        let value = values[index];
+        let value = values[index].trim(); // ← Trim removes \r and spaces
         if (header === "Price") value = parseFloat(value);
         if (header === "InStock") value = value.toLowerCase() === "true";
         obj[header] = value;
@@ -33,9 +33,9 @@ const csvFilePath = path.join(__dirname, "products.csv");
 const products = parseCSV(csvFilePath);
 
 function generateReport(products) {
-  console.log("\nProducts in stock & over $100:");
+  console.log("\nProducts in stock & over 100:");
   filterProducts(products).forEach((p) => {
-    console.log(`- ${p.ProductName} ($${p.Price})`);
+    console.log(`- ${p.ProductName} ${p.Price}`);
   });
 
   console.log("\nProducts per category:");

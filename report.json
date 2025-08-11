@@ -1,7 +1,26 @@
 {
-  "inStockOver100": [],
+  "inStockOver100": [
+    {
+      "ProductName": "Laptop",
+      "Price": 1500,
+      "Category": "Electronics",
+      "InStock": true
+    },
+    {
+      "ProductName": "Keyboard",
+      "Price": 500,
+      "Category": "Electronics",
+      "InStock": true
+    },
+    {
+      "ProductName": "Monitor",
+      "Price": 220,
+      "Category": "Electronics",
+      "InStock": true
+    }
+  ],
   "categoryCounts": {
-    "Electronics": 1,
+    "Electronics": 3,
     "Home": 1,
     "Furniture": 1
   },
@@ -10,31 +29,31 @@
       "ProductName": "Laptop",
       "Price": 1500,
       "Category": "Electronics",
-      "InStock\r": "TRUE\r"
+      "InStock": true
     },
     {
       "ProductName": "Keyboard",
       "Price": 500,
       "Category": "Electronics",
-      "InStock\r": "TRUE\r"
+      "InStock": true
     },
     {
       "ProductName": "Monitor",
       "Price": 220,
       "Category": "Electronics",
-      "InStock\r": "TRUE"
+      "InStock": true
     },
     {
       "ProductName": "Chair",
       "Price": 80,
       "Category": "Furniture",
-      "InStock\r": "TRUE\r"
+      "InStock": true
     },
     {
       "ProductName": "Coffee Mug",
       "Price": 12,
       "Category": "Home",
-      "InStock\r": "FALSE\r"
+      "InStock": false
     }
   ]
 }
