@@ -5,7 +5,7 @@
 This project is a solution for the Junior Engineer Programming Challenge.  
 It reads product data from a CSV file, processes it, and generates a summary report including:
 
-- Filtering products that are in stock and priced over a minimum threshold (default $100)
+- Filtering products that are in stock and priced over a minimum threshold (default 100)
 - Grouping products by category and counting the number per category
 - Sorting products by price and displaying the top N most expensive products (default top 5)
 - Saving the report as a JSON file
